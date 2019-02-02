@@ -11,3 +11,13 @@
 .bioImage {
     width: 100%;
 }
+
+.textInput,
+.textArea {
+    width: 200px;
+    display: block;
+}
+
+.textArea {
+    height: 200px;
+}

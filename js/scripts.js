@@ -1,7 +1,21 @@
-﻿/* event listener */
-document.getElementById("name").addEventListener('change', nameChanged);
+﻿var inputs = document.getElementsByClassName("textInput");
+for (var i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener('keyup', inputChanged);
+}
 
-/* function */
-function nameChanged(){
-   console.log('Horray! Someone wrote "' + this.value + '"!');
+var area = document.getElementById("message");
+if (area.addEventListener) {
+    area.addEventListener('input', inputChanged, false);
+} else if (area.attachEvent) {
+    area.attachEvent('onpropertychange', inputChanged);
+}
+
+function inputChanged(e) {
+    var inpName = e.target.name;
+    validate();
+    if (modelValidation.hasOwnProperty(inpName)) {
+        modelValidation[inpName] = !!e.target.value;
+    }
+
+    validate();
 }

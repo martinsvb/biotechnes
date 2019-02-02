@@ -23,17 +23,20 @@
 
   <div class="content">
     <form action="">
-        <input id="name" type="text" class="textInput" />
+        <input id="name" name="name" type="text" class="textInput" />
+        <input id="company" name="company" type="text" class="textInput" />
+        <input id="mail" name="mail" type="text" class="textInput" />
+        <input id="phone" name="phone" type="text" class="textInput" />
+        <textarea name="message" id="message" class="textArea" onkeyup="inputChanged"></textarea>
+        <button id="submit" disabled>Odeslat zprávu</button>
     </form>
   </div>
 
   <div class="footer">
 
   </div>
-  
-  <script src="js/messages.js"></script>
-  <script src="js/rules.js"></script>
-  <script src="js/validator.js"></script>
+
+  <script src="js/validation.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 
