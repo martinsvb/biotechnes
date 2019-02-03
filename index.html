@@ -3,39 +3,59 @@
 <html lang="cs">
 <head>
   <meta charset="utf-8">
-
+  
   <title>BioTechnes - Trvale udržitelný rozvoj a život</title>
   <meta name="description" content="Trvale udržitelný rozvoj a život">
   <meta name="author" content="Biotechnes">
-
+  
   <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://www.google.com/recaptcha/api.js?render=6LeczY4UAAAAAJgFkcj_EOJyFc9W19KZoXOf_ELN"></script>
 
 </head>
 
 <body>
   <div class="header">
-      <img src="img/Biotechnes_logo_rgb.jpg" alt="BioTechnes logo" class="bioLogo" />
+    <img src="img/Biotechnes_logo_rgb.jpg" alt="BioTechnes logo" class="bioLogo" />
   </div>
   
   <div class="image">
-        <img src="img/desktop_image.png" alt="BioTechnes logo" class="bioImage" />
+    <img src="img/desktop_image.png" alt="BioTechnes logo" class="bioImage" />
   </div>
 
   <div class="content">
-    <form action="">
-        <input id="name" name="name" type="text" class="textInput" />
-        <input id="company" name="company" type="text" class="textInput" />
-        <input id="mail" name="mail" type="text" class="textInput" />
-        <input id="phone" name="phone" type="text" class="textInput" />
-        <textarea name="message" id="message" class="textArea" onkeyup="inputChanged"></textarea>
-        <button id="submit" disabled>Odeslat zprávu</button>
+    <form action="" class="contactForm">
+      <div class="inputWrapper">
+        <input name="name" type="text" class="inputText inputTextRequired" required />
+        <span class="inputLabel">Jméno a příjmení</span>
+      </div>
+      <div class="inputWrapper">
+        <input name="company" type="text" class="inputText" />
+        <span class="inputLabel">Firma</span>
+      </div>
+      <div class="inputWrapper">
+        <input name="mail" type="text" class="inputText inputTextRequired" required />
+        <span class="inputLabel">E-mail</span>
+      </div>
+      <div class="inputWrapper">
+        <input name="phone" type="text" class="inputText" />
+        <span class="inputLabel">Telefon</span>
+      </div>
+      <textarea name="message" id="message" class="textArea" onkeyup="inputChanged"></textarea>
+      <button id="submit" disabled>Odeslat zprávu</button>
     </form>
   </div>
 
   <div class="footer">
 
   </div>
-
+  <script>
+  grecaptcha.ready(function() {
+      grecaptcha.execute('6LeczY4UAAAAAJgFkcj_EOJyFc9W19KZoXOf_ELN', {action: 'homepage'}).then(function(token) {
+         console.log('recaptcha', token);
+      });
+  });
+  </script>
   <script src="js/validation.js"></script>
   <script src="js/scripts.js"></script>
 </body>

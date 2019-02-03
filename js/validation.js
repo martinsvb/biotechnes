@@ -1,13 +1,16 @@
-﻿var modelValidation = {
-    name: false,
-    mail: false,
-    message: false,
+﻿var model = {
+    name: '',
+    company: '',
+    mail: '',
+    message: ''
 }
+
+var modelValidationKeys = ['name', 'mail', 'message']
 
 function validate() {
     var valid = true;
-    for (var item in modelValidation) {
-        if (!modelValidation[item]) {
+    for (var item in model) {
+        if (modelValidationKeys.indexOf(item) > -1 && !model[item]) {
             valid = false;
             break;
         }
