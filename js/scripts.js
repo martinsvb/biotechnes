@@ -21,3 +21,9 @@ function inputChanged(e) {
 
     validate(name);
 }
+
+function scrollToContactForm() {
+    var contentEl = document.getElementById('content');
+    var htmlEl = document.getElementsByTagName('html')[0];
+    htmlEl.scrollTop = contentEl.offsetTop - 10;
+}

@@ -49,12 +49,19 @@ table {
 
 .header {
     height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .bioLogo {
     margin-left: 25px;
     height: 90px;
     width: auto;
+}
+
+.contactFormLink {
+    margin-right: 25px;
 }
 
 .bioImage {
@@ -117,4 +124,8 @@ table {
 
 .hide {
     display: none;
+}
+
+.footer {
+    height: 600px;
 }
