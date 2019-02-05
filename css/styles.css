@@ -108,3 +108,13 @@ table {
     border-radius: 3px;
     border: 1px solid lightblue;
 }
+
+.inputError {
+    font-size: 12px;
+    color: red;
+    margin-top: 2px;
+}
+
+.hide {
+    display: none;
+}

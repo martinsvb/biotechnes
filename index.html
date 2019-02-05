@@ -28,6 +28,7 @@
       <div class="inputWrapper">
         <input name="name" type="text" class="inputText inputTextRequired" required />
         <span class="inputLabel">Jméno a příjmení</span>
+        <span class="inputError hide" id="error-name">Jméno a příjmení je povinná položka.</span>
       </div>
       <div class="inputWrapper">
         <input name="company" type="text" class="inputText" />
@@ -36,12 +37,16 @@
       <div class="inputWrapper">
         <input name="mail" type="text" class="inputText inputTextRequired" required />
         <span class="inputLabel">E-mail</span>
+        <span class="inputError hide" id="error-mail">E-mail je povinná položka a musí být ve zapsán ve validním formátu.</span>
       </div>
       <div class="inputWrapper">
         <input name="phone" type="text" class="inputText" />
         <span class="inputLabel">Telefon</span>
       </div>
-      <textarea name="message" id="message" class="textArea" onkeyup="inputChanged"></textarea>
+      <div class="inputWrapper">
+        <textarea name="message" id="message" class="textArea" onkeyup="inputChanged"></textarea>
+        <span class="inputError hide" id="error-message">Zpráva je povinná položka.</span>
+      </div>
       <button id="submit" disabled>Odeslat zprávu</button>
     </form>
   </div>
@@ -49,6 +54,7 @@
   <div class="footer">
 
   </div>
+
   <script>
   grecaptcha.ready(function() {
       grecaptcha.execute('6LeczY4UAAAAAJgFkcj_EOJyFc9W19KZoXOf_ELN', {action: 'homepage'}).then(function(token) {

@@ -11,12 +11,13 @@ if (area.addEventListener) {
 }
 
 function inputChanged(e) {
-    validate();
+    var name = e.target.name;
+    validate(name);
     var value = e.target.value;
-    model[e.target.name] = value;
+    model[name] = value;
     if (e.target.classList.value.indexOf('inputTextRequired') < 0 && value) {
-        e.target.classList.add('inputTextOptional');
+        value ? e.target.classList.add('inputTextOptional') : e.target.classList.remove('inputTextOptional');
     }
 
-    validate();
+    validate(name);
 }
