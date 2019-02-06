@@ -7,6 +7,7 @@
   <title>BioTechnes - Trvale udržitelný rozvoj a život</title>
   <meta name="description" content="Trvale udržitelný rozvoj a život">
   <meta name="author" content="Biotechnes">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" href="css/styles.css">
 
@@ -25,31 +26,37 @@
   </div>
 
   <div id="content" class="content">
-    <form action="" class="contactForm">
+    <div class="contactForm">
       <div class="inputWrapper">
-        <input name="name" type="text" class="inputText inputTextRequired" required />
+        <input id="name" name="name" type="text" class="inputText inputTextRequired" required />
         <span class="inputLabel">Jméno a příjmení</span>
         <span class="inputError hide" id="error-name">Jméno a příjmení je povinná položka.</span>
       </div>
       <div class="inputWrapper">
-        <input name="company" type="text" class="inputText" />
+        <input id="company" name="company" type="text" class="inputText" />
         <span class="inputLabel">Firma</span>
       </div>
       <div class="inputWrapper">
-        <input name="mail" type="text" class="inputText inputTextRequired" required />
+        <input id="mail" name="mail" type="text" class="inputText inputTextRequired" required />
         <span class="inputLabel">E-mail</span>
         <span class="inputError hide" id="error-mail">E-mail je povinná položka a musí být ve zapsán ve validním formátu.</span>
       </div>
       <div class="inputWrapper">
-        <input name="phone" type="text" class="inputText" />
+        <input id="phone" name="phone" type="text" class="inputText" />
         <span class="inputLabel">Telefon</span>
       </div>
       <div class="inputWrapper">
-        <textarea name="message" id="message" class="textArea" onkeyup="inputChanged"></textarea>
+        <textarea id="message" name="message" class="textArea" onkeyup="inputChanged"></textarea>
         <span class="inputError hide" id="error-message">Zpráva je povinná položka.</span>
       </div>
-      <button id="submit" onclick="submitForm()" disabled>Odeslat zprávu</button>
-    </form>
+      <div class="inputWrapper sendBtnWrapper">
+        <button class="sendBtn" id="submit" onclick="submitForm()" disabled>Odeslat zprávu</button>
+      </div>
+      <div class="sendResult hide" id="sendResult">
+        <p class="sendResultText" id="sendResultText"></p>
+        <span class="closeSendResult" onclick="closeSendResultInfo()">x</span>
+      </div>
+    </div>
   </div>
 
   <div class="footer">
@@ -63,8 +70,7 @@
       });
   });
   </script>
-  <script src="js/validation.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="dist/scripts-min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,30 @@
+{
+  "name": "biotechnes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "minify": "node gulpfile.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinsvb/biotechnes.git"
+  },
+  "keywords": [
+    "ecology",
+    "life"
+  ],
+  "author": "martinsvb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinsvb/biotechnes/issues"
+  },
+  "homepage": "https://github.com/martinsvb/biotechnes#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0"
+  }
+}

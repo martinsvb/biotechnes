@@ -81,7 +81,7 @@ class mailSender
             $this->_headers[] = "Message-ID: " . $this->_uid;
 			$this->_headers[] = "X-Mailer: PHP " . phpversion();
             $this->_headers[] = "MIME-Version: 1.0";
-            $this->_headers[] = "Content-type: text/${type}; charset=" . CHARSET_ISO88591;
+            $this->_headers[] = "Content-type: text/${type}; charset=" . CHARSET_UTF8;
 			$this->_headers[] = "Content-Transfer-Encoding: " . setEncoding($this->_data['mail']);
         }
     }

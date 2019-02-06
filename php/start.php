@@ -52,3 +52,14 @@ function printArr($arr)
     print_r ($arr);
     echo "</pre>";
 }
+
+/**
+ *  Enable CORS requests
+ */
+function enableCors()
+{
+    header("Access-Control-Allow-Origin: *");
+    header('Access-Control-Allow-Credentials: true');
+    header("Access-Control-Allow-Headers: X-Requested-With, Content-Type, Origin, Cache-Control, Pragma, Authorization, Accept, Accept-Encoding");
+    header("Access-Control-Allow-Methods: GET, POST, PUT, OPTIONS, DELETE");
+}

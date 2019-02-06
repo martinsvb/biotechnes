@@ -111,7 +111,8 @@ table {
 }
 
 .inputText,
-.textArea {
+.textArea,
+.sendBtn {
     border-radius: 3px;
     border: 1px solid lightblue;
 }
@@ -122,10 +123,45 @@ table {
     margin-top: 2px;
 }
 
-.hide {
-    display: none;
-}
-
 .footer {
     height: 600px;
+}
+
+.sendBtnWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sendBtn {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.sendResult {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid lightblue;
+    border-radius: 3px;
+}
+
+.closeSendResult {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid lightblue;
+    border-radius: 50%;
+}
+
+.danger {
+    background: red;
+}
+
+.success {
+    background: palegreen;
+}
+
+.hide {
+    display: none;
 }
