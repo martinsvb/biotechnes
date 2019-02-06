@@ -1,0 +1,52 @@
+﻿var messages = {
+    en: {
+      enum: 'Value must be included in %0.',
+      minLength: 'Minimal length is %0 characters.',
+      maxLength: 'Maximal length is %0 characters.',
+      email: 'Bad E-mail format.',
+      emailSimple: 'Bad E-mail format.',
+      equal: 'Value must be same as %0.',
+      greater: 'Value must be greater than %0.',
+      lower: 'Value must be lower than %0.',
+      greaterEqual: 'Value must be same or greater than %0.',
+      lowerEqual: 'Value must be same or lower than %0.',
+      required: 'Field is required.',
+      requiredNoNull: 'Field is required.',
+      regex: "Value doesn't matched string pattern.",
+      validDate: "Not valid date.",
+      greaterDate: "The date must be greater than %0.",
+      lowerDate: "The date must be less than %0."
+    },
+    cz: {
+      enum: 'Hodnota musí být obsažena v %0.',
+      minLength: 'Minimální délka je %0 znaků.',
+      maxLength: 'Maximální délka je %0 znaků.',
+      email: 'Špatný formát E-mailové adresy.',
+      emailSimple: 'Špatný formát E-mailové adresy.',
+      equal: 'Hodnota musí být stejná jako %0.',
+      greater: 'Hodnota musí být stejná nebo větší než %0.',
+      lower: 'Hodnota musí být stejná nebo menší než %0.',
+      greaterEqual: 'Hodnota musí být větší než %0.',
+      lowerEqual: 'Hodnota musí být menší než %0.',
+      required: 'Pole je povinné.',
+      requiredNoNull: 'Pole je povinné.',
+      regex: 'Hodnota neodpovídá požadovanému vzoru.',
+      validDate: 'Neplatné datum.'
+    },
+    sk: {
+      enum: 'Hodnota musí byť obsiahnutá v %0.',
+      minLength: 'Minimálna dĺžka je %0 znakov.',
+      maxLength: 'Maximálna dĺžka je %0 znakov.',
+      email: 'Zlý formát E-mailové adresy.',
+      emailSimple: 'Zlý formát E-mailové adresy.',
+      equal: 'Hodnota musí byť rovnaká ako %0.',
+      greater: 'Hodnota musí byť väčší ako %0.',
+      lower: 'Hodnota musí byť menšie ako %0.',
+      greaterEqual: 'Hodnota musí byť rovnaká alebo väčší ako %0.',
+      lowerEqual: 'Hodnota musí byť rovnaká alebo menšie ako %0.',
+      required: 'Pole je povinné',
+      requiredNoNull: 'Pole je povinné.',
+      regex: 'Hodnota nezodpovedá požadovanému vzoru.',
+      validDate: 'Zlý formát dátumu.'
+    }
+  };
