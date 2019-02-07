@@ -1,0 +1,34 @@
+﻿/* Desktop */
+@media (min-width: 1025px) {
+    .bioImageDesktop {
+        display: block;
+    }
+}
+
+/* Tablets (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .bioImageMobileBigPortrait {
+        display: block;
+    }
+}
+
+/* Tablets (landscape) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .bioImageMobileLandscape {
+        display: block;
+    }
+}
+
+/*  Tablets, Mobiles (Landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .bioImageMobileLandscape {
+        display: block;
+    }
+}
+
+/* Mobiles (Portrait) */
+@media (min-width: 320px) and (max-width: 480px) {
+    .bioImageMobilePortrait {
+        display: block;
+    }
+}

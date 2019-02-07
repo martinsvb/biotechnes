@@ -64,8 +64,30 @@ table {
     margin-right: 25px;
 }
 
+.bioPageHeaderWrapper {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #a5cdee;
+}
+
+.bioPageHeaderText {
+    color: white;
+    font-size: 36px;
+    font-weight: 500;
+    font-style: italic;
+}
+
 .bioImage {
     width: 100%;
+}
+
+.bioImageDesktop,
+.bioImageMobileLandscape,
+.bioImageMobilePortrait,
+.bioImageMobileBigPortrait {
+    display: none;
 }
 
 .contactForm {
