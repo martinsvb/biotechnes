@@ -22,14 +22,35 @@
     <p class="contactFormLink" onclick="scrollToContactForm()">Kontaktní formulář</p>
   </div>
   
-  <div class="image">
+  <div class="imageWrapper">
     <div class="bioPageHeaderWrapper">
       <h1 class="bioPageHeaderText">„Trvale udržitelný rozvoj a život“</h1>
     </div>
-    <img src="img/desktop_image.png" alt="BioTechnes logo" class="bioImage bioImageDesktop" />
-    <img src="img/mobile_landscape_image.png" alt="BioTechnes logo" class="bioImage bioImageMobileLandscape" />
-    <img src="img/mobile_portrait_image.png" alt="BioTechnes logo" class="bioImage bioImageMobilePortrait" />
-    <img src="img/mobile_big_portrait_image.png" alt="BioTechnes logo" class="bioImage bioImageMobileBigPortrait" />
+    <picture>
+      <source media="(min-width: 320px) and (max-width: 480px)" srcset="img/mobile_portrait_image.png" />
+      <source media="(min-width: 481px) and (max-width: 767px)" srcset="img/mobile_landscape_image.png" />
+      <source media="(min-width: 768px) and (max-width: 1024px)" srcset="img/mobile_big_portrait_image.png" />
+      <source media="(min-width: 768px) and (max-width: 1024px) and (orientation: landscape)" srcset="img/mobile_landscape_image.png" />
+      <img src="img/desktop_image.png" alt="BioTechnes logo" class="bioImage" />
+    </picture>
+    <div class="bioInfoTextWrapper">
+      <div>
+        <p class="bioInfoText bioInfoTextLeft">Energetická soběstačnost</p><br />
+        <p class="bioInfoText bioInfoTextLeft">Přírodní materiály</p><br />
+        <p class="bioInfoText bioInfoTextLeft">Vodní hospodářství a úprava vody</p><br />
+        <p class="bioInfoText bioInfoTextLeft">Ukládání a hospodaření s energiemi</p><br />
+        <p class="bioInfoText bioInfoTextLeft">Vývoj a výzkum</p><br />
+        <p class="bioInfoText bioInfoTextLeft">Komunitní projekty</p><br />
+      </div>
+      <div class="bioInfoTextRightGroup">
+        <p class="bioInfoText bioInfoTextRight">Organická architektura</p><br />
+        <p class="bioInfoText bioInfoTextRight">Živé stavby</p><br />
+        <p class="bioInfoText bioInfoTextRight">Biodynamické hospodaření</p><br />
+        <p class="bioInfoText bioInfoTextRight">Vývoj software</p><br />
+        <p class="bioInfoText bioInfoTextRight">Společenství</p><br />
+        <p class="bioInfoText bioInfoTextRight">Řemesla</p><br />
+      </div>
+    </div>
   </div>
 
   <div id="content" class="content">
@@ -56,7 +77,7 @@
         <textarea id="message" name="message" class="textArea" onkeyup="inputChanged"></textarea>
         <span class="inputError hide" id="error-message">Zpráva je povinná položka.</span>
       </div>
-      <div class="inputWrapper sendBtnWrapper">
+      <div class="inputWrapper">
         <button class="sendBtn" id="submit" onclick="submitForm()" disabled>Odeslat zprávu</button>
       </div>
       <div class="sendResult hide" id="sendResult">

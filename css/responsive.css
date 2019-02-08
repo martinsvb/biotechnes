@@ -1,24 +1,12 @@
-﻿/* Desktop */
-@media (min-width: 1025px) {
-    .bioImageDesktop {
-        display: block;
-    }
-    .bioImageMobileLandscape,
-    .bioImageMobilePortrait,
-    .bioImageMobileBigPortrait {
-        display: none;
-    }
-}
-
-/* Tablets (portrait) */
+﻿/* Tablets (portrait) */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .bioImageMobileBigPortrait {
-        display: block;
+    .bioInfoTextWrapper {
+        bottom: 40px;
     }
-    .bioImageDesktop,
-    .bioImageMobileLandscape,
-    .bioImageMobilePortrait {
-        display: none;
+    .bioInfoText {
+        font-size: 18px;
+        margin-bottom: 20px;
+        padding: 8px;
     }
     .inputWrapper {
         width: 90%;
@@ -27,37 +15,52 @@
 
 /* Tablets (landscape) */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .bioImageMobileLandscape {
-        display: block;
+    .bioInfoTextWrapper {
+        bottom: 30px;
     }
-    .bioImageDesktop,
-    .bioImageMobilePortrait,
-    .bioImageMobileBigPortrait {
-        display: none;
+    .bioInfoText {
+        font-size: 18px;
+        margin-bottom: 20px;
+        padding: 8px;
     }
 }
 
 /*  Tablets, Mobiles (Landscape) */
 @media (min-width: 481px) and (max-width: 767px) {
-    .bioImageMobileLandscape {
-        display: block;
+    .bioInfoTextWrapper {
+        bottom: 10px;
     }
-    .bioImageDesktop,
-    .bioImageMobilePortrait,
-    .bioImageMobileBigPortrait {
-        display: none;
+    .bioInfoText {
+        font-size: 14px;
+        margin-bottom: 10px;
+        padding: 6px;
     }
 }
 
 /* Mobiles (Portrait) */
 @media (min-width: 320px) and (max-width: 480px) {
-    .bioImageMobilePortrait {
-        display: block;
+    .bioPageHeaderText {
+        font-size: 28px;
     }
-    .bioImageDesktop,
-    .bioImageMobileLandscape,
-    .bioImageMobileBigPortrait {
-        display: none;
+    .bioInfoTextWrapper {
+        flex-direction: column;
+        bottom: 15px;
+    }
+    .bioInfoTextRightGroup {
+        text-align: left;
+    }
+    .bioInfoTextRight {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding-right: 15px;
+        padding-left: 50px;
+    }
+    .bioInfoText {
+        font-size: 16px;
+        margin-bottom: 15px;
+        padding: 8px;
     }
     .inputWrapper {
         width: 90%;
