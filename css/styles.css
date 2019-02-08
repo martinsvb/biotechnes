@@ -47,6 +47,12 @@ table {
 	border-spacing: 0;
 }
 
+:root {
+    --main-color: lightblue;
+    --main-text-color: white;
+    --second-text-color: gray;
+}
+
 .header {
     height: 100px;
     display: flex;
@@ -73,7 +79,7 @@ table {
 }
 
 .bioPageHeaderText {
-    color: white;
+    color: var(--main-text-color);
     font-size: 36px;
     font-weight: 500;
     font-style: italic;
@@ -91,18 +97,18 @@ table {
 }
 
 .contactForm {
-    width: 300px;
-    margin: 10px auto 0 auto;
+    margin-top: 20px;
 }
 
 .inputWrapper {
     position: relative;
-    margin-bottom: 10px;
+    margin: 0 auto 10px auto;
+    width: 300px;
 }
 
-.inputWrapper,
 .inputText,
-.textArea {
+.textArea,
+.sendBtn {
     width: 100%;
 }
 
@@ -136,7 +142,7 @@ table {
 .textArea,
 .sendBtn {
     border-radius: 3px;
-    border: 1px solid lightblue;
+    border: 1px solid var(--main-color);
 }
 
 .inputError {
@@ -158,6 +164,8 @@ table {
 .sendBtn {
     padding: 5px 10px;
     cursor: pointer;
+    background: var(--main-color);
+    color: var(--main-text-color);
 }
 
 .sendResult {
@@ -165,14 +173,14 @@ table {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid lightblue;
+    border: 1px solid var(--main-color);
     border-radius: 3px;
 }
 
 .closeSendResult {
     cursor: pointer;
     padding: 5px;
-    border: 1px solid lightblue;
+    border: 1px solid var(--main-color);
     border-radius: 50%;
 }
 
