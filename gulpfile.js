@@ -11,4 +11,10 @@ gulp.task('default', gulp.series('clean', (done) => {
         .pipe(minify())
         .pipe(gulp.dest('dist'));
     done();
+}, (done) => {
+    gulp.src(['css/reset.css', 'css/main.css', 'css/contactForm.css', 'css/responsive.css'])
+        .pipe(concat('styles.css'))
+        .pipe(minify())
+        .pipe(gulp.dest('dist'));
+    done();
 }));

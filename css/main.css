@@ -1,0 +1,103 @@
+﻿:root {
+    --main-color: lightblue;
+    --main-text-color: white;
+    --second-text-color: gray;
+    --background-color: #76d04c;
+}
+
+.header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bioLogo {
+    margin-left: 25px;
+    height: 90px;
+    width: auto;
+}
+
+.contactFormLink {
+    margin-right: 25px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.imageWrapper {
+    position: relative;
+}
+
+.bioPageHeaderWrapper {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #a5cdee;
+}
+
+.bioPageHeaderText {
+    color: var(--main-text-color);
+    font-size: 36px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.bioImage {
+    width: 100%;
+}
+
+.bioInfoTextWrapper {
+    position: absolute;
+    bottom: 160px;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bioInfoText {
+    color: var(--main-color);
+    background: var(--main-text-color);
+    opacity: .8;
+    font-size: 20px;
+    margin-bottom: 32px;
+    padding: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.bioInfoTextRightGroup {
+    text-align: right;
+}
+
+.bioInfoTextRight {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 15px;
+    padding-right: 50px;
+}
+
+.bioInfoTextLeft {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-right: 15px;
+    padding-left: 50px;
+}
+
+.footer {
+    background: var(--background-color);
+}
+
+.danger {
+    background: red;
+}
+
+.success {
+    background: palegreen;
+}
+
+.hide {
+    display: none !important;
+}

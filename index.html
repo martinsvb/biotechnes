@@ -9,8 +9,7 @@
   <meta name="author" content="Biotechnes">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="dist/styles.css">
 
   <script src="https://www.google.com/recaptcha/api.js?render=6LeczY4UAAAAAJgFkcj_EOJyFc9W19KZoXOf_ELN"></script>
 
@@ -94,7 +93,7 @@
   <script>
   grecaptcha.ready(function() {
       grecaptcha.execute('6LeczY4UAAAAAJgFkcj_EOJyFc9W19KZoXOf_ELN', {action: 'homepage'}).then(function(token) {
-         console.log('recaptcha', token);
+        return null;
       });
   });
   </script>
