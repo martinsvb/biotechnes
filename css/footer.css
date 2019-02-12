@@ -1,0 +1,35 @@
+﻿.footer {
+    background: var(--background-color);
+    padding-top: 40px;
+}
+
+.footerTextWrapper {
+    width: 400px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.footerTextDivider {
+    width: 4px;
+    background: white;
+}
+
+.footerText {
+    width: 198px;
+    color: black;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.footerTextLeft {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.footerTextRight {
+    text-align: left;
+    padding-left: 20px;
+}

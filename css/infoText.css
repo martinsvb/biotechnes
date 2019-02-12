@@ -1,0 +1,39 @@
+﻿.bioInfoTextWrapper {
+    position: absolute;
+    bottom: 240px;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bioInfoText {
+    color: var(--main-color);
+    background: var(--main-text-color);
+    opacity: .8;
+    font-size: 28px;
+    margin-bottom: 32px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'Roboto', Arial, sans-serif;
+    display: inline-block;
+}
+
+.bioInfoTextRightGroup {
+    text-align: right;
+}
+
+.bioInfoTextRight {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 15px;
+    padding-right: 50px;
+}
+
+.bioInfoTextLeft {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-right: 15px;
+    padding-left: 50px;
+}

@@ -1,8 +1,12 @@
 ﻿:root {
-    --main-color: lightblue;
+    --main-color: #8ab5e3;
     --main-text-color: white;
-    --second-text-color: gray;
-    --background-color: #76d04c;
+    --second-text-color:  #6d6d6d;
+    --background-color: #c7eace;
+}
+
+html {
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .header {
@@ -22,6 +26,16 @@
     margin-right: 25px;
     color: var(--main-color);
     cursor: pointer;
+    text-transform: uppercase;
+}
+
+.contactFormTitle {
+    padding: 20px 0;
+    color: var(--main-color);
+    text-align: center;
+    border-bottom: 1px solid var(--main-color);
+    font-size: 20px;
+    font-style: italic;
 }
 
 .imageWrapper {
@@ -45,49 +59,6 @@
 
 .bioImage {
     width: 100%;
-}
-
-.bioInfoTextWrapper {
-    position: absolute;
-    bottom: 160px;
-    background: transparent;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.bioInfoText {
-    color: var(--main-color);
-    background: var(--main-text-color);
-    opacity: .8;
-    font-size: 20px;
-    margin-bottom: 32px;
-    padding: 10px;
-    text-transform: uppercase;
-    display: inline-block;
-}
-
-.bioInfoTextRightGroup {
-    text-align: right;
-}
-
-.bioInfoTextRight {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    padding-left: 15px;
-    padding-right: 50px;
-}
-
-.bioInfoTextLeft {
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding-right: 15px;
-    padding-left: 50px;
-}
-
-.footer {
-    background: var(--background-color);
 }
 
 .danger {

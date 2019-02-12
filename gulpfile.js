@@ -6,7 +6,7 @@ const minify = require('gulp-minify');
 gulp.task('clean', () => del(['dist']));
 
 gulp.task('css', (done) => {
-    gulp.src(['css/reset.css', 'css/main.css', 'css/contactForm.css', 'css/responsive.css'])
+    gulp.src(['css/reset.css', 'css/main.css', 'css/infoText.css', 'css/contactForm.css', 'css/footer.css', 'css/responsive.css'])
         .pipe(concat('styles.css'))
         .pipe(minify())
         .pipe(gulp.dest('dist'));

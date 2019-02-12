@@ -1,22 +1,29 @@
 ﻿/* Tablets (portrait) */
 @media (min-width: 768px) and (max-width: 1024px) {
     .bioInfoTextWrapper {
-        bottom: 40px;
+        bottom: 80px;
     }
     .bioInfoText {
         font-size: 18px;
         margin-bottom: 20px;
         padding: 8px;
     }
-    .inputWrapper {
+    .inputWrapper,
+    .footerTextWrapper {
         width: 90%;
+    }
+    .footerTextDivider {
+        width: 4%;
+    }   
+    .footerText {
+        width: 48%;
     }
 }
 
 /* Tablets (landscape) */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .bioInfoTextWrapper {
-        bottom: 30px;
+        bottom: 80px;
     }
     .bioInfoText {
         font-size: 18px;
@@ -28,7 +35,7 @@
 /*  Tablets, Mobiles (Landscape) */
 @media (min-width: 481px) and (max-width: 767px) {
     .bioInfoTextWrapper {
-        bottom: 10px;
+        bottom: 70px;
     }
     .bioInfoText {
         font-size: 14px;
@@ -40,11 +47,11 @@
 /* Mobiles (Portrait) */
 @media (min-width: 320px) and (max-width: 480px) {
     .bioPageHeaderText {
-        font-size: 28px;
+        font-size: 22px;
     }
     .bioInfoTextWrapper {
         flex-direction: column;
-        bottom: 15px;
+        bottom: 60px;
     }
     .bioInfoTextRightGroup {
         text-align: left;
@@ -62,7 +69,14 @@
         margin-bottom: 15px;
         padding: 8px;
     }
-    .inputWrapper {
+    .inputWrapper,
+    .footerTextWrapper {
         width: 90%;
+    }
+    .footerTextDivider {
+        width: 4%;
+    }   
+    .footerText {
+        width: 48%;
     }
 }
