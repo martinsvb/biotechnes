@@ -1,4 +1,5 @@
 ﻿.footer {
+    height: 400px;
     background: var(--background-color);
     padding-top: 40px;
 }
@@ -11,15 +12,16 @@
 }
 
 .footerTextDivider {
-    width: 4px;
+    width: 2px;
     background: white;
 }
 
 .footerText {
-    width: 198px;
-    color: black;
-    display: table-cell;
-    vertical-align: middle;
+    width: 199px;
+    color: var(--second-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     line-height: 1.5;
     font-size: 14px;
 }

@@ -1,6 +1,6 @@
 ﻿.bioInfoTextWrapper {
     position: absolute;
-    bottom: 240px;
+    bottom: 120px;
     background: transparent;
     display: flex;
     flex-direction: row;
@@ -12,7 +12,7 @@
     color: var(--main-color);
     background: var(--main-text-color);
     opacity: .8;
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 32px;
     padding: 10px;
     text-transform: uppercase;
