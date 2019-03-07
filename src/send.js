@@ -1,3 +1,8 @@
+if (!fetch) {
+    require('es6-promise').polyfill();
+    require('isomorphic-fetch');
+}
+
 async function submitForm() {
     var submitBtn = document.getElementById('submit');
     submitBtn.innerText = 'Odesílám'
