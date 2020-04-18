@@ -154,16 +154,46 @@ html {
 }
 
 .contactForm {
-    margin: 30px 0;
+    margin: 10px 0 40px 0;
+    padding-top: 40px;
+    border-top: 1px solid var(--main-color);
+    opacity: 0;
+    transition: 2s ease opacity;
+}
+
+.contactFormHide {
+    display: none;
+    opacity: 1;
+    transition: 2s ease opacity;
+}
+
+.contactFormTitle,
+.contactFormArrow {
+    cursor: pointer;
 }
 
 .contactFormTitle {
-    padding: 20px 0;
+    margin: 20px 0 10px 0;
     color: var(--main-color);
     text-align: center;
-    border-bottom: 1px solid var(--main-color);
     font-size: 20px;
     font-style: italic;
+}
+
+.contactFormArrow {
+    margin: 0 auto;
+    display: block;
+}
+
+.contactFormArrowUp {
+    transform: rotate(180deg);
+    transition: transform 500ms ease;
+    margin-bottom: 20px;
+}
+
+.contactFormArrowDown {
+    transform: rotate(0deg);
+    transition: transform 500ms ease;
 }
 
 .inputWrapper {
@@ -279,6 +309,12 @@ html {
 .footerTextRight {
     text-align: left;
     padding-left: 20px;
+}
+
+.bioLogoFooter {
+    width: 200px;
+    margin: 40px auto 0 auto;
+    display: block;
 }
 
 /* Tablets (portrait) */

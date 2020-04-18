@@ -35,3 +35,9 @@
     text-align: left;
     padding-left: 20px;
 }
+
+.bioLogoFooter {
+    width: 200px;
+    margin: 40px auto 0 auto;
+    display: block;
+}

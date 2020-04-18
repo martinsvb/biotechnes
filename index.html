@@ -18,7 +18,7 @@
 
 <body>
   <div class="header">
-    <img src="img/Biotechnes_logo_rgb.jpg" alt="BioTechnes logo" class="bioLogo" />
+    <img src="img/Biotechnes_logo_rgb_transparent.png" alt="BioTechnes logo" class="bioLogo" />
     <p class="contactFormLink" onclick="scrollToContactForm()">Kontaktujte nás</p>
   </div>
   
@@ -54,8 +54,9 @@
   </div>
   
   <div id="content" class="content">
-    <p class="contactFormTitle">Kontaktujte nás</p>
-    <div class="contactForm">
+    <p class="contactFormTitle" onclick="contactFormClicked()">Kontaktujte nás</p>
+    <img src="img/contact_form_arrow.png" onclick="contactFormClicked()" alt="BioTechnes logo" class="contactFormArrow contactFormArrowUp" />
+    <div class="contactForm contactFormHide">
       <div class="inputWrapper">
         <input id="name" name="name" type="text" class="inputText inputTextRequired" required />
         <span class="inputLabel">Jméno a příjmení</span>
@@ -101,6 +102,7 @@
         <p>DIČ: CZ04328558</p>
       </div>
     </div>
+    <img src="img/Biotechnes_logo_rgb_transparent.png" alt="BioTechnes logo" class="bioLogoFooter" />
   </div>
 
   <script>
