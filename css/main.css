@@ -3,6 +3,7 @@
     --main-text-color: white;
     --second-text-color:  #6d6d6d;
     --background-color: #c7eace;
+    --background-color-light: #def2e2;
 }
 
 html {
@@ -62,4 +63,12 @@ html {
 
 .hide {
     display: none !important;
+}
+
+.textBold {
+    font-weight: bold;
+}
+
+.textItalic {
+    font-style: italic;
 }

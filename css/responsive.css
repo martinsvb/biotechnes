@@ -39,6 +39,9 @@
         margin-bottom: 10px;
         padding: 6px;
     }
+    .bioInfoTextFooter {
+        width: calc(90% - 20px);
+    }
 }
 
 /* Mobiles (Portrait) */
@@ -48,7 +51,7 @@
     }
     .bioInfoTextWrapper {
         flex-direction: column;
-        bottom: 15px;
+        bottom: 14px;
     }
     .bioInfoTextRightGroup {
         text-align: left;
@@ -56,14 +59,14 @@
     .bioInfoTextRight {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        padding-right: 15px;
+        border-top-right-radius: 14px;
+        border-bottom-right-radius: 14px;
+        padding-right: 14px;
         padding-left: 50px;
     }
     .bioInfoText {
         font-size: 16px;
-        margin-bottom: 15px;
+        margin-bottom: 14px;
         padding: 8px;
     }
     .inputWrapper,
@@ -72,5 +75,8 @@
     }
     .footerText {
         width: calc(50% - 1px);
+    }
+    .bioInfoTextFooter {
+        width: calc(90% - 20px);
     }
 }

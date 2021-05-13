@@ -25,15 +25,15 @@
 }
 
 .bioInfoTextRight {
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    padding-left: 15px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    padding-left: 14px;
     padding-right: 50px;
 }
 
 .bioInfoTextLeft {
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding-right: 15px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    padding-right: 14px;
     padding-left: 50px;
 }

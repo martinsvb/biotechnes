@@ -1,7 +1,6 @@
 ﻿.footer {
-    height: 400px;
     background: var(--background-color);
-    padding-top: 40px;
+    padding: 40px 0;
 }
 
 .footerTextWrapper {
@@ -40,4 +39,17 @@
     width: 200px;
     margin: 40px auto 0 auto;
     display: block;
+}
+
+.bioInfoTextFooter {
+    width: 600px;
+    margin: 40px auto 0 auto;
+    padding: 10px 15px;
+    display: block;
+    color: var(--second-text-color);
+    line-height: 1.5;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: var(--background-color-light);
 }
